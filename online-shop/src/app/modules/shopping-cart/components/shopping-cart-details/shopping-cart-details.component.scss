@@ -1,0 +1,68 @@
+@use '../../../../styles/colors.scss' as colors;
+
+.shopping-cart-container {
+    margin: 20px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        h1 {
+            margin: 0;
+        }
+
+        .actions {
+            .checkout-button {
+                background-color: colors.$primary-color;
+                border: none;
+                padding: 10px 20px;
+                color: colors.$button-color;
+                font-size: 16px;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: colors.$primary-hover-color;
+                }
+            }
+        }
+    }
+
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+            background-color: colors.$background-placeholder;
+
+            th {
+                text-align: left;
+                padding: 10px;
+                border: 1px solid colors.$border-color;
+            }
+        }
+
+        tbody {
+            tr {
+                &:hover {
+                    background-color: colors.$table-row-alt-bg-color;
+                }
+
+                td {
+                    padding: 10px;
+                    border: 1px solid colors.$border-color;
+
+                    .quantity-input {
+                        width: 60px;
+                        padding: 5px;
+                        text-align: center;
+                        border: 1px solid colors.$border-color;
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@use '../../styles/colors' as colors;
+
+.product-details-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h1 {
+          font-size: 24px;
+          margin: 0;
+      }
+
+      .actions {
+          display: flex;
+          gap: 10px;
+
+          .edit-button,
+          .delete-button {
+              background-color: colors.$primary-color;
+              color: colors.$button-color;
+              border: none;
+              padding: 10px 20px;
+              border-radius: 5px;
+              font-size: 16px;
+              cursor: pointer;
+          }
+
+          .edit-button {
+              background-color: colors.$primary-color;
+          }
+
+          .edit-button:hover {
+              background-color: colors.$primary-hover-color;
+          }
+
+          .delete-button {
+              background-color: colors.$danger-color;
+          }
+
+          .delete-button:hover {
+              background-color: colors.$danger-hover-color;
+          }
+      }
+  }
+
+  .details {
+      display: flex;
+      gap: 20px;
+
+      .info {
+          flex: 2;
+
+          p {
+              margin: 10px 0;
+              font-size: 16px;
+
+              .label {
+                  font-weight: bold;
+                  color: colors.$label-color;
+              }
+          }
+      }
+
+      .image {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .image-placeholder {
+              width: 150px;
+              height: 150px;
+              border: 1px solid colors.$border-color;
+              background-color: colors.$background-placeholder;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: colors.$placeholder-text-color;
+              font-size: 18px;
+              border-radius: 5px;
+          }
+      }
+  }
+}

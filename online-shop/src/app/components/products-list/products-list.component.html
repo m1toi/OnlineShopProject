@@ -1,0 +1,31 @@
+<div class="product-list-container">
+    <div class="header">
+      <h1>Products</h1>
+      <div class="actions">
+        <app-icon-button icon="shopping_cart" (click)="navigateToCart()"></app-icon-button>
+        <button class="add-button">ADD</button>
+      </div>
+    </div>
+  
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.category }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }} RON</td>
+          <td>
+            <app-icon-button icon="arrow_right" (click)="navigateToProduct(product.id)"></app-icon-button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

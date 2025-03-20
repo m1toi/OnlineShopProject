@@ -1,0 +1,34 @@
+<div class="shopping-cart-container">
+  <div class="header">
+    <h1>Shopping Cart</h1>
+    <div class="actions">
+      <button class="checkout-button"(click)="checkout()">CHECKOUT</button>
+    </div>
+  </div>
+
+  <table class="product-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.category }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }} RON</td>
+        <td>{{ product.quantity }}</td>
+        <td>
+          <app-icon-button icon="delete" (buttonClick)="removeProduct(product.id)"></app-icon-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="total-price-container">
+    <h2>Total Price: {{ totalPrice }} RON</h2>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="product-details-container">
+    <div class="header">
+      <h1>Product: {{ product.name }}</h1>
+      <div class="actions">
+        <button class="edit-button">EDIT</button>
+        <button class="delete-button" (click)="deleteProduct()">DELETE</button>
+        <button class="add-button" (click)="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  
+    <div class="details">
+      <div class="info">
+        <p><span class="label">Name:</span> {{ product.name }}</p>
+        <p><span class="label">Category:</span> {{ product.category }}</p>
+        <p><span class="label">Price:</span> {{ product.price }} RON</p>
+        <p>
+          <span class="label">Description:</span>
+          {{ product.description }}
+        </p>
+      </div>
+      <div class="image">
+        <div class="image-placeholder"></div>
+      </div>
+    </div>
+  </div>
+  
