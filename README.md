@@ -37,7 +37,3 @@ This repository contains both the backend and frontend source code, structured a
 -   **HTTP Client**: Angular HttpClient
 
 ---
-
-## 📂 Project Structure
-
-The repository is organized into two main directories, one for each part of the application:
