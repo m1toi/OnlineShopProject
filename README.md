@@ -6,7 +6,7 @@ This repository contains both the backend and frontend source code, structured a
 
 ---
 
-## ✨ Core Features
+## Core Features
 
 -   **Secure RESTful API**: A comprehensive API for managing products, users, and orders, secured with **OAuth2**.
 -   **Robust Backend**: Built with Spring Boot, leveraging Spring Data JPA for data persistence and a service-oriented architecture.
@@ -18,7 +18,7 @@ This repository contains both the backend and frontend source code, structured a
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend (Spring Boot)
 -   **Framework**: Spring Boot
